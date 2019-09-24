@@ -1,0 +1,15 @@
+
+ #canvas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .button-holder {
+    margin-top: 10px; 
+    text-align: center; 
+
+}
+
+.title {
+    text-align: center;
+ }

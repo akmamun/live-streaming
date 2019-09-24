@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-
+import "./WebCam.css"
 class Webcam extends Component {
 
     capture = () => {
@@ -30,14 +30,19 @@ class Webcam extends Component {
             );
 
         return (
-
-            <div className="container-fluid">
-                    <video id='camera' width="800" autoPlay/>
-                    <button id="capture" onClick={this.capture} 
-                            className="btn btn-secondary"> Capture </button>
-                <canvas id="canvas" width="600" height="600" />
-            </div>
-
+                <div className="container-fluid">
+                    <div className="row">
+                        <div>
+                            <h4 className="title">Camera Live Stream</h4>  
+                            <video id='camera' width="800" autoPlay/>
+                             <div className="button-holder">
+                                <button id="capture" onClick={this.capture} 
+                                    className="btn btn-secondary"> Take Capture </button>
+                            </div>
+                        </div>  
+                        <canvas id="canvas" width="700" height="700" />
+                    </div>
+                </div>
         );
     }
 
