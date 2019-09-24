@@ -1,8 +1,10 @@
-import React from "react"; 
+import React,{Suspense} from "react"; 
 import Webcam from "./components/Webcam";
 
 export default function App() {
   return (
-  //  <Webcam/>
+    <Suspense fallback={<div>Loading...</div>}>
+  	    <Webcam/>
+     </Suspense>
     );
   }
